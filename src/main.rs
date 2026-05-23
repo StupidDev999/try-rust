@@ -1,3 +1,8 @@
+use extabs::Expand;
+
 fn main() {
-    println!("Hello, world!");
+    let s = String::from("Hewwo\tWorld!");
+    let expanded = s.expandtabs(4);
+
+    println!("{}", expanded);
 }
