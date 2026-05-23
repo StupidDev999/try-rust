@@ -3,13 +3,13 @@ use std::env;
 use super::Verbosity::Verbosity;
 
 pub struct AppState {
-    verbose: Verbosity,
-    colours: bool,
-    warn: bool,
+    pub verbose: Verbosity,
+    pub colours: bool,
+    pub warn: bool,
 }
 
 impl Default for AppState {
-    fn default() -> Self {
+    fn default() -> Self { // why no pub here???!
         Self {
             verbose: Verbosity::FILE_LINES,
             colours: true,
